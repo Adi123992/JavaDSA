@@ -1,3 +1,5 @@
+package Maths_DSA;
+
 public class FlipInvertImg {
 
     public static void main(String[] args) {

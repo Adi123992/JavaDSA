@@ -1,3 +1,5 @@
+package Maths_DSA;
+
 //find the sum of nth row
 public class PascalsTriangle {
     public static void main(String[] args) {

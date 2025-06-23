@@ -1,4 +1,6 @@
-//means turn the value of ith bit to 1 
+package Maths_DSA;
+
+//means turn the value of ith bit to 1
 public class SetBit {
     public static void main(String[] args) {
         int num = 9;

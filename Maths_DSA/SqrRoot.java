@@ -1,3 +1,5 @@
+package Maths_DSA;
+
 public class SqrRoot {
     public static void main(String[] args) {
         int n = 40;

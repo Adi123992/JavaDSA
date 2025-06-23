@@ -1,4 +1,6 @@
-//reset means make 1 as 0 
+package Maths_DSA;
+
+//reset means make 1 as 0
 public class ResetBit {
     public static void main(String[] args) {
         int num = 9;

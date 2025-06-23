@@ -1,3 +1,5 @@
+package Maths_DSA;
+
 public class SetBits {
     public static void main(String[] args) {
         int num = 45;

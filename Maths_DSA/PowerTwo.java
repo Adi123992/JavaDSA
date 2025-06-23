@@ -1,3 +1,5 @@
+package Maths_DSA;
+
 //You are given a no. find out if its power of 2 or not
 public class PowerTwo {
     public static void main(String[] args) {

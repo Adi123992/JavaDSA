@@ -1,3 +1,5 @@
+package Maths_DSA;
+
 //find the sqroot of a number via Newrton Ralphson method
 public class NewtonSqrMethod {
     public static void main(String[] args) {

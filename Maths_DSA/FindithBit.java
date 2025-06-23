@@ -1,3 +1,5 @@
+package Maths_DSA;
+
 //to find the ith bit of the number
 public class FindithBit {
     public static void main(String[] args) {

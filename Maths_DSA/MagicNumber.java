@@ -1,3 +1,5 @@
+package Maths_DSA;
+
 // to find the magic number via the binary form of the number and multiplying the 5 power according to the digit place
 public class MagicNumber {
     public static void main(String[] args) {
