@@ -1,0 +1,14 @@
+# Ignore IntelliJ project settings
+.idea/
+*.iml
+
+# Ignore compiled class files
+*.class
+
+# Ignore IntelliJ output folder
+out/
+
+# Ignore OS-specific hidden files
+.DS_Store
+Thumbs.db
+desktop.ini
