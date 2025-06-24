@@ -1,3 +1,5 @@
+package Maths_DSA;
+
 public class XorRange {
     public static void main(String[] args) {
         // range xor for a,b = xor(b)^xor(a-1);

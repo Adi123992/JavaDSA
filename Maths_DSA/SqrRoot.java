@@ -1,8 +1,10 @@
+package Maths_DSA;
+
 public class SqrRoot {
     public static void main(String[] args) {
         int n = 40;
         int p = 3; // precision up to 3 decimal places
-        System.out.printf("%.3f",sqrt(n, p));
+        System.out.printf("%.3f", sqrt(n, p));
     }
 
     private static double sqrt(int n, int p) {

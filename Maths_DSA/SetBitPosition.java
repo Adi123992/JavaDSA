@@ -1,4 +1,6 @@
-// to find the position of rightmost set bit 
+package Maths_DSA;
+
+// to find the position of rightmost set bit
 public class SetBitPosition {
     public static void main(String[] args) {
         int num = 36;

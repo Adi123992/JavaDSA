@@ -1,3 +1,5 @@
+package Maths_DSA;
+
 //sieve of eratosthenes is a method by which we can efficiently find the prime number via excluding the unwanted factor of the initial iterators and hence increasing the efficiency..
 public class SievePrime {
     public static void main(String[] args) {
@@ -21,5 +23,5 @@ public class SievePrime {
                 System.out.print(i + " ");
             }
         }
-}
+    }
 }

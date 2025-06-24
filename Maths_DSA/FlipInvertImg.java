@@ -1,7 +1,9 @@
+package Maths_DSA;
+
 public class FlipInvertImg {
 
     public static void main(String[] args) {
-        int[][] image = { { 1, 1, 0 }, { 1, 0, 1 }, { 0, 0, 0 } };
+        int[][] image = {{1, 1, 0}, {1, 0, 1}, {0, 0, 0}};
         int[][] ans = flipImg(image);
         // for (int i = 0; i < ans.length; i++) {
         // for (int j = 0; j < ans[i].length; j++) {
