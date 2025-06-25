@@ -17,8 +17,9 @@ public class SievePrime {
             }
         }
 
-        // Print all primesclear
+        // Print all primes clear
         for (int i = 2; i <= n; i++) {
+            //all false members are prime
             if (!primes[i]) {
                 System.out.print(i + " ");
             }

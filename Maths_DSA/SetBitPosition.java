@@ -6,7 +6,7 @@ public class SetBitPosition {
         int num = 36;
         String binary = Integer.toBinaryString(num);
         System.out.println("Binary: " + binary);
-
+//this is possible due to -n being a 2's complement of n
         int value = num & -num;
         System.out.println("Rightmost set bit value: " + value);
 

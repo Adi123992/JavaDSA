@@ -37,6 +37,7 @@ public class Factors {
         ArrayList<Integer> list = new ArrayList<>();
         for (int i = 1; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
+                //becoz its giving same number hence we need to just print it once, else for other cases use n and n/i as 2 different factors
                 if (n / i == i) {
                     System.out.print(i + " ");
                 } else {

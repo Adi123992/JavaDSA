@@ -1,6 +1,6 @@
 package Maths_DSA;
 
-//find the sqroot of a number via Newrton Ralphson method
+//find the sqroot of a number via Newton Ralphson method
 public class NewtonSqrMethod {
     public static void main(String[] args) {
         int num = 36;
@@ -16,7 +16,7 @@ public class NewtonSqrMethod {
                 break;
             }
             x = root;// it updates the value of x with root so that if can take up new value for
-            // evulation of the sqr root
+            // evaluation of the sqr root
         }
 
         return root;
