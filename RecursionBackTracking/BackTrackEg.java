@@ -1,6 +1,6 @@
 package RecursionBackTracking;
 
-public class BasicBacktracking {
+public class BackTrackEg {
     public static void main(String[] args) {
         boolean[][] board = {
                 {true, true, true},
@@ -12,17 +12,22 @@ public class BasicBacktracking {
 
     static void allPath(String p, boolean[][] maze, int r, int c) {
         if (r == maze.length - 1 && c == maze[0].length - 1) {
-            System.out.println(p);
+            System.out.println("Path found: " + p);
             return;
         }
+
         if (!maze[r][c]) {
             return;
         }
+
+        // Visit this cell
+        System.out.println("Visiting: (" + r + ", " + c + ") — Marking as false");
         maze[r][c] = false;
+
         if (r < maze.length - 1) {
             allPath(p + "D", maze, r + 1, c);
         }
-        if (c < maze.length - 1) {
+        if (c < maze[0].length - 1) {
             allPath(p + "R", maze, r, c + 1);
         }
         if (r > 0) {
@@ -31,6 +36,10 @@ public class BasicBacktracking {
         if (c > 0) {
             allPath(p + "L", maze, r, c - 1);
         }
+
+        // Backtrack
         maze[r][c] = true;
+        System.out.println("Backtracking: (" + r + ", " + c + ") — Marking as true again");
     }
 }
+
