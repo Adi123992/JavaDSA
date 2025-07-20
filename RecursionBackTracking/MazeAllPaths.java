@@ -1,5 +1,6 @@
 package RecursionBackTracking;
 
+//obstacle
 public class MazeAllPaths {
     public static void main(String[] args) {
         boolean[][] maze = {

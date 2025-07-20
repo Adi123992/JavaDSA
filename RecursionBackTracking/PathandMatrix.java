@@ -15,19 +15,19 @@ public class PathandMatrix {
 
     static void pathMatrix(String p, boolean[][] maze, int r, int c, int[][] path, int step) {
         if (r == maze.length - 1 && c == maze[0].length - 1) {
-            path[r][c] = step;
+            path[r][c] = step;//marking the final step
             for (int[] arr : path) {
-                System.out.println(Arrays.toString(arr));
+                System.out.println(Arrays.toString(arr));// priting the arrays
             }
-            System.out.println(p);
+            System.out.println(p);//printing the string path
             System.out.println();
             return;
         }
         if (!maze[r][c]) {
             return;
         }
-        maze[r][c] = false;
-        path[r][c] = step;
+        maze[r][c] = false;           // Mark as visited
+        path[r][c] = step;            // Save step at current cell
         if (r < maze.length - 1) {
             pathMatrix(p + "D", maze, r + 1, c, path, step + 1);
         }
@@ -40,7 +40,7 @@ public class PathandMatrix {
         if (c > 0) {
             pathMatrix(p + "L", maze, r, c - 1, path, step + 1);
         }
-        maze[r][c] = true;
-        path[r][c] = 0;
+        maze[r][c] = true;//reseting the boolean values for visit tracking
+        path[r][c] = 0;//resetting the path as 0 for the next cell iteration
     }
 }
