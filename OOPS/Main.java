@@ -5,7 +5,6 @@ public class Main {
         Human aditya = new Human(20, "Aditya", 25000, false);
         Human tejas = new Human(21, "Tejas", 27000, false);
 
-
         System.out.println(Human.population);
         System.out.println(Human.population);
     }
