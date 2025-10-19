@@ -19,16 +19,16 @@ class FamousAuthor extends Author {
         super(b);
     }
 
-    public final double calculateRoyalty() { // LINE 1: error because it was a final class and couldnt be overriden
-        return (booksWritten * royalty) + 1000; // LINE 2
-    }
+//    public final double calculateRoyalty() { // LINE 1: error because it was a final class and couldnt be overriden
+//        return (booksWritten * royalty) + 1000; // LINE 2
+//    }
 }
 
 public class AuthorTest {
     public static void main(String[] args) {
         Author a1 = new FamousAuthor(5); // LINE 3
-        FamousAuthor fa1 = new Author(7); // LINE 4:error becoz famousAuthor is a subclass of Author
+        //FamousAuthor fa1 = new Author(7); // LINE 4:error becoz famousAuthor is a subclass of Author
         a1.calculateRoyalty();
-        fa1.calculateRoyalty();
+        //fa1.calculateRoyalty();
     }
 }
