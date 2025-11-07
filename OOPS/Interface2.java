@@ -9,8 +9,8 @@ class Book {
 
     public Book(Book b) {
         this.name = b.name;
-        //this.authors=b.authors(); //shallow copy
-        this.authors = b.authors.clone();//deep copy
+        this.authors = b.authors; //shallow copy
+        //this.authors = b.authors.clone();//deep copy
     }
 }
 

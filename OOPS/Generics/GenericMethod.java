@@ -16,7 +16,7 @@ public class GenericMethod {
         System.out.println(num);
     }
 
-    public <U extends Number> void printMeAgain(U num) {g
+    public <U extends Number> void printMeAgain(U num) {
         System.out.println(num);
     }
 }
