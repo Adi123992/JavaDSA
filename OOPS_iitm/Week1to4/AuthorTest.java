@@ -1,4 +1,4 @@
-package OOPS_iitm;
+package OOPS_iitm.Week1to4;
 
 class Author {
     protected static double royalty = 50;

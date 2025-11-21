@@ -28,7 +28,7 @@ public class PlayerMap {
 // Define the method getFinalList( ) here
         ArrayList<String> finalList = new ArrayList<>();
         Map<String, ArrayList<Integer>> p = t.getPlayerMap();
-        for (Map.Entry<String, ArrayList<Integer>> entry : t.getPlayerMap().entrySet()) {
+        for (Map.Entry<String, ArrayList<Integer>> entry : p.entrySet()) {
             ArrayList<Integer> pass = entry.getValue();
             int i = 0;
             while (i < pass.size() && pass.get(i) >= 80) {

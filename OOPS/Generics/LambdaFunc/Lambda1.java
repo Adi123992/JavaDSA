@@ -38,6 +38,7 @@ public class Lambda1 {
     }
 
     //functional interface are those which contain only 1 abstract metehod, you can either write the annotation or not its up to you
+    //functional interface are applicable to be written as a labmda expression
     @FunctionalInterface
     interface Operation {
         int operation(int a, int b);

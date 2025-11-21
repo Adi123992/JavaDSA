@@ -1,7 +1,5 @@
 package OOPS.Generics;
 
-import OOPS_iitm.Test;
-
 interface Car {
     void startEngine();
 

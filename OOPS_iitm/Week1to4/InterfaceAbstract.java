@@ -1,4 +1,4 @@
-package OOPS_iitm;
+package OOPS_iitm.Week1to4;
 
 interface Communicable {
     default void communicate() {// default method doesnt need to be overriden it is automatically present

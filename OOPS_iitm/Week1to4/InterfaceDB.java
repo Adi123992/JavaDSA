@@ -1,4 +1,4 @@
-package OOPS_iitm;
+package OOPS_iitm.Week1to4;
 
 interface DBIF {
     public void executeStatement(String qry);

@@ -1,4 +1,4 @@
-package OOPS_iitm;
+package OOPS_iitm.Week1to4;
 
 //NOTE : Interfaces can extend each other but classes can only implement them, while the classes
 // can extend each other
