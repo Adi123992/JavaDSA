@@ -31,7 +31,7 @@ class Student {
 public class ReflectEg {
     public static void main(String[] args) throws ClassNotFoundException {
         ArrayList<String> list = new ArrayList<String>();
-        Class c = Class.forName("Student");
+        Class c = Class.forName("OOPS_iitm.Week5to8.Streams.Student");
         Constructor[] consts = c.getConstructors();
         Field[] fields1 = c.getFields();
         for (Constructor i : consts)
