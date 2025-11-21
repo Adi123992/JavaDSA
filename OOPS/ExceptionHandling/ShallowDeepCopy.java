@@ -27,7 +27,7 @@ public class ShallowDeepCopy implements Cloneable {
         s1.arr[1] = 15;
         System.out.println(Arrays.toString(s1.arr));//shallow copy
         System.out.println(Arrays.toString(s2.arr));//shallow copy
-//deep copy
+        //deep copy
         ShallowDeepCopy s3 = (ShallowDeepCopy) s1.clone();
         s1.arr[0] = 9;
         System.out.println(Arrays.toString(s1.arr));
