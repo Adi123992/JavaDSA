@@ -63,6 +63,7 @@ public class LLIntro {
         }
         Node node = new Node(value, temp.next);
         temp.next = node;
+        size++;
     }
 
     public void display() {
