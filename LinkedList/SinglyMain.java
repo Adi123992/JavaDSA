@@ -11,5 +11,8 @@ public class SinglyMain {
         l.insertLast(77);
         l.insertPosition(33, 3);
         l.display();
+        System.out.println();
+        System.out.println("==================");
+        System.out.println(l.find(4));//return the node pointed by reference variable
     }
 }

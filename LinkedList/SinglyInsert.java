@@ -65,6 +65,18 @@ public class SinglyInsert {
 
     }
 
+    //find the node via the value
+    public Node find(int value) {
+        Node temp = head;
+        while (temp != null) {
+            if (temp.value == value) {
+                return temp;//if the value matches the reference variable return it
+            }
+            temp = temp.next;//if not matched then point to the next node
+        }
+        return null;// return null if not found
+    }
+
     private class Node {
         private int value;
         private Node next;//by default when create the value for this reference variable is "null"
