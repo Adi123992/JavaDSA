@@ -97,10 +97,7 @@ public class Clone1 {
         Team t1 = new Team("Alpha", m1);
         Team t2 = t1.clone();
         t2.setTeamName(sc.nextLine());
-        t2.setManager(new Manager(sc.nextLine(),
-
-                new Project(sc.nextLine(), sc.nextDouble())));
-
+        t2.setManager(new Manager(sc.nextLine(), new Project(sc.nextLine(), sc.nextDouble())));
         System.out.println("Team t1: " + t1);
         System.out.println("Team t2: " + t2);
         sc.close();
