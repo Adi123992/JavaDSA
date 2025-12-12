@@ -42,6 +42,7 @@ public class CustomQueue {
         } else {
             int removed = data[0];
             //shift the elements after the removal from the front
+            //Complexity : O(n)
             for (int i = 1; i < end; i++) {
                 data[i - 1] = data[i];
             }
