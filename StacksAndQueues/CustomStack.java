@@ -29,16 +29,16 @@ public class CustomStack {
 
     }
 
-    public int push(int value) {
+    public int push(int value) throws Exception {
         if (isFull()) {
-            System.out.println("Stack is full ");
+            throw new Exception("Stack is full ");
         }
         ptr++;
         data[ptr] = value;
         return value;
     }
 
-    private boolean isFull() {
+    public boolean isFull() {
         return ptr == data.length - 1;
     }
 
@@ -51,7 +51,7 @@ public class CustomStack {
         }
     }
 
-    private boolean isEmpty() {
+    public boolean isEmpty() {
         return ptr == -1;
     }
 
