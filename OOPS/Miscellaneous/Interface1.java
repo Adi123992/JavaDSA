@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Miscellaneous;
 
 interface Shape {
     default void draw() {

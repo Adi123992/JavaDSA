@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Miscellaneous;
 
 public class ChnageVal {
     static void change(int x) {

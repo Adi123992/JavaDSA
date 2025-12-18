@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Miscellaneous;
 
 public class Main {
     public static void main(String[] args) {

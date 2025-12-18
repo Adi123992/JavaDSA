@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Miscellaneous;
 
 public class Singleton {
     public static Singleton instance;

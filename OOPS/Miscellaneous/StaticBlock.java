@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Miscellaneous;
 
 public class StaticBlock {
     static int a = 4;

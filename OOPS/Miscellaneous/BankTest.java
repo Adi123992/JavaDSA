@@ -1,4 +1,4 @@
-package OOPS;
+package OOPS.Miscellaneous;
 
 class BankAccount {
     private static double interestRate = 3.5;
