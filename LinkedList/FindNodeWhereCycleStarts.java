@@ -5,7 +5,7 @@ public class FindNodeWhereCycleStarts {
 
     //cycle detection
     public static boolean containsCycle(FindNodeWhereCycleStarts node) {
-        git fast = node.head;
+        Node fast = node.head;
         Node slow = node.head;
         while (fast != null && fast.next != null) {
             fast = fast.next.next;
