@@ -36,6 +36,7 @@ public class CircularLL {
             head = head.next;
             if (head == null) { // list became empty
                 tail = null;
+                return;
             }
             tail.next = head;
             return;

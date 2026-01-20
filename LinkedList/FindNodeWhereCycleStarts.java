@@ -41,6 +41,7 @@ public class FindNodeWhereCycleStarts {
         Node s = node.head;
         while (length > 0) {
             s = s.next;
+            length--;
         }
         while (f != s) {
             f = f.next;
