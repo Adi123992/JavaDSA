@@ -11,7 +11,7 @@ public class DynamicQueue extends CircularQueue {
 
     @Override
     public boolean insert(int item) {
-        if (this.isEmpty()) {
+        if (this.isFull()) {
             int[] temp = new int[data.length * 2];//create the array of double size
             //copy the elements to the new array
 
