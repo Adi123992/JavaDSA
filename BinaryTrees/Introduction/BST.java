@@ -95,6 +95,46 @@ public class BST {
         display(node.right, "Right child of " + node.value + " is : ");
     }
 
+    //preorder : root - left - right
+    public void preOrder() {
+        preOrder(root);
+    }
+
+    public void preOrder(Node node) {
+        if (node == null)
+            return;
+
+        System.out.print(node.value + " ");
+        preOrder(node.left);
+        preOrder(node.right);
+    }
+
+    //inorder : left - node - right
+    public void inOrder() {
+        inOrder(root);
+    }
+
+    public void inOrder(Node node) {
+        if (node == null)
+            return;
+        inOrder(node.left);
+        System.out.print(node.value + " ");
+        inOrder(node.right);
+    }
+
+    //postorder : left - right - node
+    public void postOrder() {
+        postOrder(root);
+    }
+
+    public void postOrder(Node node) {
+        if (node == null)
+            return;
+        postOrder(node.left);
+        postOrder(node.right);
+        System.out.print(node.value + " ");
+    }
+
     private class Node {
         private int value;
         private Node left;

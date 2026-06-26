@@ -67,4 +67,5 @@ public class CustomStack {
             System.out.print(data[i] + " ");
         }
     }
+
 }
