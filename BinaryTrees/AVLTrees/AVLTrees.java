@@ -78,7 +78,7 @@ public class AVLTrees {
             if (getHeight(node.right.left) - getHeight(node.right.right) < 0) {
                 return leftRotate(node);
             }
-            //left - right case
+            //right - left case
             if (getHeight(node.right.left) - getHeight(node.right.right) > 0) {
                 node.right = rightRotate(node.right);
                 return leftRotate(node);
