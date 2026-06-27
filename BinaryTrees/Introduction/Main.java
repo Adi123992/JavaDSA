@@ -11,6 +11,7 @@ public class Main {
         int[] nums = {5, 2, 10, 15, 3, 1, 12};
         tree.populate(nums);
         tree.display();
+        System.out.println(tree.balanced());
         System.out.println("Inorder : ");
         tree.inOrder();
         System.out.println();
