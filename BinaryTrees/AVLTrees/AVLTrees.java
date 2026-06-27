@@ -113,7 +113,6 @@ public class AVLTrees {
         return p;
     }
 
-
     public void display() {
         display(root, "Root Node : ");
     }
@@ -124,27 +123,6 @@ public class AVLTrees {
         }
     }
 
-    //if the arr is sorted then take the middle of array and then build a tree
-    public void populateSorted(int[] nums) {
-        populateSorted(nums, 0, nums.length);
-    }
-
-    private void populateSorted(int[] nums, int start, int end) {
-        if (nums.length == 0) {
-            return;
-        }
-        if (start >= end) {
-            return;
-        }
-        int mid = (start + end) / 2;
-
-        insert(nums[mid]);
-        //left arr
-        populateSorted(nums, start, mid);
-        //right arr
-        populateSorted(nums, mid + 1, end);
-    }
-
     private void display(Node node, String details) {
         if (node == null) {
             return;
@@ -153,46 +131,6 @@ public class AVLTrees {
         System.out.println(details + node.value);
         display(node.left, "Left child of " + node.value + " is : ");
         display(node.right, "Right child of " + node.value + " is : ");
-    }
-
-    //preorder : root - left - right
-    public void preOrder() {
-        preOrder(root);
-    }
-
-    public void preOrder(Node node) {
-        if (node == null)
-            return;
-
-        System.out.print(node.value + " ");
-        preOrder(node.left);
-        preOrder(node.right);
-    }
-
-    //inorder : left - node - right
-    public void inOrder() {
-        inOrder(root);
-    }
-
-    public void inOrder(Node node) {
-        if (node == null)
-            return;
-        inOrder(node.left);
-        System.out.print(node.value + " ");
-        inOrder(node.right);
-    }
-
-    //postorder : left - right - node
-    public void postOrder() {
-        postOrder(root);
-    }
-
-    public void postOrder(Node node) {
-        if (node == null)
-            return;
-        postOrder(node.left);
-        postOrder(node.right);
-        System.out.print(node.value + " ");
     }
 
     private class Node {

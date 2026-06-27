@@ -7,5 +7,6 @@ public class AVLMain {
             avl.insert(i);
         }
         System.out.println(avl.height());
+        System.out.println(avl.balanced());
     }
 }
